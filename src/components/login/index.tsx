@@ -28,7 +28,7 @@ export default function Login() {
     // Step 2: Login to wallet via wharfkit
     const result = await sessionKit.login(); // TODO: We need to pass the parameter: {nonce} when do the login.
     const identityProof = result.response.identityProof;
-    if (!identityProof) throw Error("No signature returned after login");
+    if (!identityProof) throw Error("No Identity Proof returned after login");
 
     // Step 3: Login to dApp Backend using nonce and signature
     const signature = identityProof.signature.toString();
