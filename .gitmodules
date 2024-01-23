@@ -1,0 +1,3 @@
+[submodule "lib/wallet-plugin-cloudwallet"]
+	path = lib/wallet-plugin-cloudwallet
+	url = git@github.com:hieuwax/wallet-plugin-cloudwallet.git
